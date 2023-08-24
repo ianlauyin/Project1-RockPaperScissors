@@ -625,11 +625,9 @@ var getComputerDirection = function () {
 var genGameEndCal = function () {
   if (winRecord > loseRecord) {
     winLosePhase = `Congrats! Keep on going!!!&#128293&#128293&#128293`;
-  }
-  if (winRecord < loseRecord) {
+  } else if (winRecord < loseRecord) {
     winLosePhase = `Keep fighting!&#128170 You can win this!`;
-  }
-  if (winRecord == loseRecord) {
+  } else if (winRecord == loseRecord) {
     winLosePhase = "Ohhhhh!&#128562 Who will gets the next score?";
   }
   scorePhase = `Now you have ${winRecord} scores.<br>Computer have ${loseRecord} scores.`;
